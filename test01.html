@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <script>
+    //  1.promptで入力した値から「正の数」「負の数」を判定してalertする処理を書いてください。
+    //2.1.で数値以外が入力された場合には「数値を入力してください」とalertする処理を追加してください。
+    var answer = prompt('10-9の答えはどっち？1または2');
+    if (answer == 1){
+      alert('正解');
+    } else if (answer == 2) {
+      alert('不正解');
+    } else {
+      alert('数値を入力してください ');
+    }
+
+    //3.配列に'パンダ', 'ライオン', 'キリン'を定義し、while文ですべて表示する処理を書いてください。
+    //4.3.でwhile文より前にpromptでキー入力し、その入力した内容が'ライオン'の場合に処理を中断するように変更してください。
+    //5.4.で中断したときの'ライオン'の添字もalertするように変更してください。
+    var animals = ['パンダ', 'ライオン', 'キリン'];
+    var answer = prompt('好きな動物はなんですか？');
+
+    var i = 0;
+    while (i < animals.length) {
+      alert(animals[i]);
+      i++;
+    }
+
+    //6.オブジェクト変数の配列の形式で、動物と体重を表現してみましょう。例としてパンダは80(Kg)、ライオンは200(Kg)、キリンは300(Kg)としましょう。
+    //7.6.でpromptで入力した動物名の体重をalertするように変更してください。
+    var animals = [
+      {'name': 'パンダ', 'price': 80},
+      {'name': 'ライオン', 'price': 200},
+      {'name': 'キリン', 'price': 300}
+    ];
+    var answer = prompt('パンダ、ライオン、キリンいずれかの動物名を入力してください')
+    if (answer == 'パンダ'){
+      alert('パンダの体重は' + animals[0].price + kgです);
+    } else if (answer == 'ライオン'){
+      alert('ライオンの体重は' + animals[1].price + kgです);
+    } else {
+      alert('キリンの体重は' + animals[2].price + kgです);
+    }
+
+    /*function calc(x){
+      return x * x * 3.14;
+    }
+    var answer = prompt('半径を入力してください')
+    if (answer == ){
+      alert(calc(x))
+    }*/
+
+    </script>
+  </body>
+</html>
