@@ -21,10 +21,14 @@
     //4.3.でwhile文より前にpromptでキー入力し、その入力した内容が'ライオン'の場合に処理を中断するように変更してください。
     //5.4.で中断したときの'ライオン'の添字もalertするように変更してください。
     var animals = ['パンダ', 'ライオン', 'キリン'];
-    var answer = prompt('好きな動物はなんですか？');
+    var answer = prompt('好きな動物はなんですか？パンダ、ライオン、キリン');
 
     var i = 0;
-    while (i < animals.length) {
+    while (true) {
+      if ( answer === 'ライオン' && animals[i] === 'ライオン' ) {
+          alert( 'ライオン' );
+          break;
+      }
       alert(animals[i]);
       i++;
     }
@@ -45,13 +49,16 @@
       alert('キリンの体重は' + animals[2].price + kgです);
     }
 
-    /*function calc(x){
+//8.円の半径を入力するとその面積を返す関数をつくり、その結果をalertしましょう。円周率は3.14とします。
+    function calc(x){
       return x * x * 3.14;
     }
     var answer = prompt('半径を入力してください')
-    if (answer == ){
-      alert(calc(x))
-    }*/
+    alert calc(answer);
+
+
+
+
 
     </script>
   </body>
