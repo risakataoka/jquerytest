@@ -24,7 +24,7 @@
     var answer = prompt('好きな動物はなんですか？パンダ、ライオン、キリン');
 
     var i = 0;
-    while (true) {
+    while (i < animals.length) {
       if ( answer === 'ライオン' && animals[i] === 'ライオン' ) {
           alert( 'ライオン' );
           break;
@@ -42,11 +42,11 @@
     ];
     var answer = prompt('パンダ、ライオン、キリンいずれかの動物名を入力してください')
     if (answer == 'パンダ'){
-      alert('パンダの体重は' + animals[0].price + kgです);
+      alert('パンダの体重は' + animals[0].price + 'kgです');
     } else if (answer == 'ライオン'){
-      alert('ライオンの体重は' + animals[1].price + kgです);
+      alert('ライオンの体重は' + animals[1].price + 'kgです');
     } else {
-      alert('キリンの体重は' + animals[2].price + kgです);
+      alert('キリンの体重は' + animals[2].price + 'kgです');
     }
 
 //8.円の半径を入力するとその面積を返す関数をつくり、その結果をalertしましょう。円周率は3.14とします。
